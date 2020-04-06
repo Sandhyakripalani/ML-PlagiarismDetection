@@ -8,7 +8,7 @@ from sklearn.externals import joblib
 from sklearn.ensemble import RandomForestClassifier
 #import sagemaker
 #from sagemaker import LinearLearner
-from sklearn.neighbors import KNeighborsClassifier
+#from sklearn.neighbors import KNeighborsClassifier
 
 ## TODO: Import any additional libraries you need to define a model
 
@@ -60,9 +60,9 @@ if __name__ == '__main__':
     ## --- Your code here --- ##
 
     ## TODO: Define a model 
-    #model = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
+    model = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
     #model = LinearLearner(predictor_type='binary_classifier',epochs=10)
-    model = KNeighborsClassifier(n_neighbors=4)
+    #model = KNeighborsClassifier(n_neighbors=4)
     
     ## TODO: Train the model
     #train_x_np = train_x.astype('float32')
